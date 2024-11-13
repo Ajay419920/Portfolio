@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+
+    <!-- Button to Show the Project -->
+    <button id="showProjectBtn">Show Project</button>
+
+    <!-- Hidden Project Description -->
+    <div id="projectDetails" class="hidden">
+        <h2>Project Title: Amazing Website</h2>
+        <p>This is an example project showcasing a website built with HTML, CSS, and JavaScript. It features interactive elements, responsive design, and modern web technologies.</p>
+        <a href="https://www.example.com" target="_blank">Visit the project</a>
+    </div>
+
+    
+</body>
+
+<script>
+// Get the button and the project details div
+const showProjectBtn = document.getElementById('showProjectBtn');
+const projectDetails = document.getElementById('projectDetails');
+
+// Add event listener to the button
+showProjectBtn.addEventListener('click', function() {
+    // Toggle the visibility of the project details
+    if (projectDetails.classList.contains('hidden')) {
+        projectDetails.classList.remove('hidden');
+    } else {
+        projectDetails.classList.add('hidden');
+    }
+});
+</script>
+</html>
